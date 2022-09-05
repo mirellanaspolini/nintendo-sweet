@@ -1,0 +1,23 @@
+.parceiros-wrapper {
+    max-width: 80vw;
+}
+
+.empresa {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+img {
+    width: 200px;
+    object-fit: contain;
+}
+
+@media (max-width: 850px) {
+    .empresa {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+}

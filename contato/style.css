@@ -1,0 +1,52 @@
+main {
+    max-width: 80vw;
+    align-items: flex-start;
+    margin: 2.5rem 13vw 2.5rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 22px;
+    color: #7c449d;
+}
+
+.endereco,
+.email {
+    position: relative;
+    margin-left: 40px;
+    padding-left: 2px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.endereco:before,
+.email:before {
+    content: " ";
+    position: absolute;
+    vertical-align: middle;
+    top: 4px; /* não sei porque, mas o vertical align não funcionou, então eu tive que apelar aos deuses antigos */
+}
+
+.endereco:before {
+    content: url(../img/icones/map.svg);
+    left: -26px;
+}
+
+.email:before {
+    content: url(../img/icones/mail.svg);
+    left: -28px;
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: auto;
+        gap: 1rem;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .endereco,
+    .email {
+        font-size: 16px;
+    }
+}

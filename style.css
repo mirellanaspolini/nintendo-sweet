@@ -3,9 +3,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
-    background-color: #d39ef4;
-    color: #7c449d;
 }
 
 .header-menu ul {
@@ -29,11 +26,18 @@ img {
 }
 
 .produto-promo {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-rows: 1fr;
 }
 
 .produto-descricao {
     padding: 0 2rem;
+    width: 90%;
+}
+
+.produto-descricao h1 {
+    text-align: left;
 }
 
 .produto-descricao_preco::before {
@@ -68,18 +72,16 @@ img {
 }
 
 footer {
+    width: 100%;
     padding: 1rem;
     background-color: #d39ef4;
     color: #7c449d;
 }
 
 @media (max-width: 850px) {
-    .produto-promo {
-        flex-direction: column;
-    }
     img {
         width: 100%;
-        height: 400px;
+        height: 300px;
         margin-bottom: 1rem;
         border-radius: 60px 60px 0 0;
     }
